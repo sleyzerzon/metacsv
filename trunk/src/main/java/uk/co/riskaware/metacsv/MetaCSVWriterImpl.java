@@ -6,6 +6,11 @@ import java.util.List;
 
 import au.com.bytecode.opencsv.CSVWriter;
 
+/**
+ * Implementation of basic CSV file write that also writes metadata to the top of the CSV file
+ * @author s_darwin
+ *
+ */
 public class MetaCSVWriterImpl implements MetaCSVWriter {
 
     private CSVWriter delegate;
