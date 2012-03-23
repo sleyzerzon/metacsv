@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import au.com.bytecode.opencsv.CSVReader;
+import au.com.bytecode.opencsv.CSVWriter;
 
 /**
  * Implementation of basic CSV file reader that also reads metadata from the top of the CSV file
@@ -59,7 +60,7 @@ public class MetaCSVReaderImpl implements MetaCSVReader {
 
     private boolean lineIsMetadata(String[] line) {
         return (line.length == 1) && line[0].contains("=")
-                && !line[0].contains("" + CSVReader.DEFAULT_SKIP_LINES);
+                && !line[0].contains("" + CSVWriter.DEFAULT_SEPARATOR);
     }
 
 	@Override
