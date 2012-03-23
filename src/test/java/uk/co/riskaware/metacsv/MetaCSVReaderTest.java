@@ -16,6 +16,7 @@ public class MetaCSVReaderTest {
         MetaCSVReader reader = new MetaCSVReaderImpl(input);
         Metadata metadata = reader.getMetadata();
         Assert.assertEquals("val", metadata.get("key"));
+        reader.close();
     }
     
     @Test
@@ -25,6 +26,7 @@ public class MetaCSVReaderTest {
         Metadata metadata = reader.getMetadata();
         Assert.assertEquals("val", metadata.get("key"));
         Assert.assertEquals("newVal", metadata.get("newKey"));
+        reader.close();
     }
     
     @Test
@@ -36,5 +38,6 @@ public class MetaCSVReaderTest {
         Assert.assertEquals("2", entries.get(0).get(1));
         Assert.assertEquals("3", entries.get(1).get(0));
         Assert.assertEquals("4", entries.get(1).get(1));
+        reader.close();
     }
 }
