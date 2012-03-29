@@ -1,8 +1,13 @@
 package uk.co.riskaware.metacsv;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 
-public class Metadata extends HashMap<String, String> {
+/**
+ * Simple metdata as LinkedHashMap to ensure insertion order is maintained
+ * @author s_darwin
+ *
+ */
+public class Metadata extends LinkedHashMap<String, String> {
 
     private static final long serialVersionUID = 1L;
 
