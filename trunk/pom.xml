@@ -5,7 +5,7 @@
 	<groupId>uk.co.riskaware</groupId>
 	<artifactId>metacsv</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>metacsv - csv reader and writer that includes metadata</name>
 	<url>http://www.riskaware.co.uk</url>
 	<dependencies>
